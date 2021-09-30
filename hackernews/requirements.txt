@@ -1,0 +1,6 @@
+
+argparse==1.1
+pydantic==1.8.2
+requests==2.26.0
+
+
