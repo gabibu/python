@@ -1,0 +1,11 @@
+
+
+REDIS:
+  host: localhost
+  port: 6379
+  db: 0
+
+PATIENT_DATA_FETCHER_TYPE: REDIS
+CODES_MODEL_TYPE: STAT
+CODE_MODELS_DATASET: data/MIMICIIIpersentenceannotateddataset.csv
+CODES_WEIGHTS_FILE_NAME: data/codes_stat.csv

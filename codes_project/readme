@@ -1,0 +1,10 @@
+
+### to run the project do:
+
+1. set WORKDIR in dockerfile to be the project root directory - for example /etc/codes_project
+2. do cd into project root directory codes_project
+3. run - docker-compose up
+4. Access the service:
+    http://{Host}:{Port}/predict?text={Text}&patient_id={patient_id}
+5. response format:
+{"code":{predicted code - string},"is_new_patient":{bool},"patient_id":{string},"text":string}

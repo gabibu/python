@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  codes_service:
+    build: .
+    network_mode: "host"
+  redis:
+    image: "redis:alpine"
+    command: redis-server --save 20 1 --loglevel warning
+    volumes:
+      - ./redis-data:/data
+    ports:
+      - "6379:6379"

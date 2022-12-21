@@ -1,0 +1,14 @@
+
+FROM python:latest
+
+
+WORKDIR /home/gabib/PycharmProjects/codes_project
+
+COPY requirements.txt requirements.txt
+
+RUN pip install --no-cache-dir -r requirements.txt
+COPY . .
+
+CMD [ "python", "-m", "codes_services.web_api_interfce.codes_models_interface", "--config_file", "service_config/service_config.yaml"]
+
+
