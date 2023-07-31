@@ -11,8 +11,8 @@ or not.
 To Build and Run the docker:
 
 ```
-cd into autobrains 
-
+cd into decision_maker
+ 
 run: 
 
 docker build -t decisionmaker  ./
